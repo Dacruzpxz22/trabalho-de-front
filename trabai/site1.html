@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo Tático</title>
+    <link rel="stylesheet" crossorigin href="site1.css">
+  
+  <body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="cabecalho">
+      <div class="container cabecalho__wrap">
+        <a class="logo" href="#inicio" aria-label="Jogo Tático">V</a>
+
+        <input type="checkbox" id="menu-toggle" class="menu__toggle" aria-label="Abrir menu" />
+        <label for="menu-toggle" class="menu__btn" aria-hidden="true" title="Abrir/fechar menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="menu" aria-label="Navegação principal">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#agentes">Agentes</a></li>
+            <li><a href="#mapas">Mapas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" class="principal">
+      <section id="inicio" class="hero" aria-label="Introdução">
+        <div class="container hero__grid">
+          <article class="hero__texto">
+            <h1>Jogo Tático 5v5 — jogue grátis</h1>
+            <p>Experiência competitiva com partidas rápidas, agentes únicos e mapas estratégicos. Sem downloads: esta é uma demo estática em HTML e CSS.</p>
+            <div class="hero__acoes">
+              <a class="botao botao--primario" href="index.html">Login</a>
+              <a class="botao botao--secundario" href="#agentes">Explorar Agentes</a>
+            </div>
+          </article>
+          <div class="hero__arte" role="img" aria-label="Arte abstrata inspirada em jogo tático"></div>
+        </div>
+      </section>
+
+      <section id="noticias" class="secao" aria-labelledby="titulo-noticias">
+        <div class="container">
+          <h2 id="titulo-noticias">Notícias</h2>
+          <div class="grade">
+            <article class="cartao">
+              <h3>Atualização de balanceamento</h3>
+              <p>Ajustes finos em habilidades e economia para partidas mais equilibradas.</p>
+              <a class="link" href="#">Ler mais</a>
+            </article>
+            <article class="cartao">
+              <h3>Novo modo tático</h3>
+              <p>Rotação semanal com regras especiais e foco total na estratégia da equipe.</p>
+              <a class="link" href="#">Ler mais</a>
+            </article>
+            <article class="cartao">
+              <h3>Evento de temporada</h3>
+              <p>Desafios temáticos com recompensas cosméticas exclusivas.</p>
+              <a class="link" href="#">Ler mais</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="agentes" class="secao" aria-labelledby="titulo-agentes">
+        <div class="container">
+          <h2 id="titulo-agentes">Agentes</h2>
+          <div class="grade">
+            <article class="cartao cartao--ilustracao" aria-label="Agente duelista com foco em entrada de bomb">
+              <h3>Duelista</h3>
+              <p>Rápido, agressivo e ideal para abrir espaço nas entradas.</p>
+            </article>
+            <article class="cartao cartao--ilustracao" aria-label="Agente controlador que domina zonas">
+              <h3>Controlador</h3>
+              <p>Cria coberturas e nega visão para manipular o ritmo da rodada.</p>
+            </article>
+            <article class="cartao cartao--ilustracao" aria-label="Agente sentinela de suporte defensivo">
+              <h3>Sentinela</h3>
+              <p>Âncoras defensivas com utilitários de informação e proteção.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="mapas" class="secao" aria-labelledby="titulo-mapas">
+        <div class="container">
+          <h2 id="titulo-mapas">Mapas</h2>
+          <div class="grade">
+            <article class="cartao cartao--mapa" aria-label="Mapa urbano com múltiplos acessos">
+              <h3>Distrito</h3>
+              <p>Ruas estreitas, flancos rápidos e posições elevadas.</p>
+            </article>
+            <article class="cartao cartao--mapa" aria-label="Mapa costeiro com áreas abertas">
+              <h3>Marinho</h3>
+              <p>Rotas amplas e disputas de longa distância.</p>
+            </article>
+            <article class="cartao cartao--mapa" aria-label="Mapa industrial com túneis e passarelas">
+              <h3>Forja</h3>
+              <p>Níveis verticais e rotas alternativas complexas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="secao" aria-labelledby="titulo-contato">
+        <div class="container">
+          <h2 id="titulo-contato">Contato</h2>
+          <p>Este é um site demonstrativo sem backend. Para falar com a equipe, utilize suas redes favoritas.</p>
+          <div class="acoes-centro">
+            <a class="botao botao--primario" href="#inicio">Voltar ao início</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container rodape__wrap">
+        <p>© <span id="ano-atual">2025</span> Jogo Tático (demo estática). Todos os direitos reservados.</p>
+        <nav aria-label="Links secundários">
+          <a href="#privacidade">Privacidade</a>
+          <a href="#termos">Termos</a>
+          <a href="#acessibilidade">Acessibilidade</a>
+        </nav>
+      </div>
+    </footer>
+</body>
+</html>

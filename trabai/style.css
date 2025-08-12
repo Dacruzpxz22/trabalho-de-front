@@ -1,0 +1,165 @@
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: font1;
+  background-image: url(https://wallpapers.com/images/featured/fundo-estetico-laranja-jj6qd82gtnmonfen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: blur(7px);
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px #000000;
+  backdrop-filter: blur(60px);
+
+  .img1,
+  .img2 {
+    width: 50px;
+    margin: 0 auto 20px;
+  }
+}
+.login-container h2 {
+  margin-bottom: 20px;
+}
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+.login-container input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  border-color: aliceblue;
+}
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #ee540c;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-container button:hover {
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+@font-face {
+  font-family: "font1";
+  src: url(../Edges.ttf) format("truetype");
+}
+
+form {
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+.login-container h1 {
+  text-align: center;
+}
+.p1 {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.img1,
+.img2 {
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+}
+.social-icons {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.img1,
+.img2 {
+  width: 10px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  scale: 1.5;
+}
+
+.img3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  scale: 1.5;
+}
+
+.img1,
+.img2,
+.img3 :hover {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+form :hover {
+  color: #ff5100;
+  transition: all 1s ease;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.3s;
+}
+@keyframes pulse-btn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-btn {
+  animation: pulse-btn 0.4s;
+}
+.login-container input:focus {
+  outline: 2px solid #bb2626;
+  border-color: #ff0000;
+  box-shadow: 0 0 5px #ff510088;
+}
